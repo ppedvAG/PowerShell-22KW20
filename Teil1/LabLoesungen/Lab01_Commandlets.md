@@ -9,7 +9,7 @@ Get-Command -Noun *Computer*
 2. 
 Hierfür ist ein Download der Hilfe notwendig mit **Update-Help**
 ```powershell
-Get-Help Get-Process -Examples
+Get-Help Get-AdUser -Examples
 ```
 3.
 ```powershell
