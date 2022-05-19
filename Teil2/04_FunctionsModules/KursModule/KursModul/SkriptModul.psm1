@@ -82,6 +82,5 @@ param(
         $FileName = $FileBaseName + $FileNumber + ".txt"
 
         New-Item -Path $Path -Name $FileName -ItemType File | Out-Null
-    }
-  
+    } 
 }
