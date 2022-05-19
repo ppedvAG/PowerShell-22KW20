@@ -35,8 +35,10 @@ if(Test-Path -Path $TestDirPath -PathType Container)
     }
     else
     {
-        Write-Host -ForegroundColor Red -Object "Ordner bereits vorhanden"
-        exit
+        #terminierender Fehler
+        throw "Ordner bereits vorhanden. Ziehen Sie ihn bedacht das Skript mit -Force auszuführen"
+        #nicht terminierender Fehler
+        Write-Error -ErrorAction Stop 
     }
 }
 
